@@ -25,11 +25,11 @@
 			$info = $this->Feedback_model->get_info($id);
 			if(!$info){
 				$this->session->set_flashdata('message', 'Không tồn tại feedback');
-				redirect('http://localhost/projectdatabase/index.php/admin/feedback/index');
+				redirect('https://shielded-sierra-44382.herokuapp.com/index.php/admin/feedback/index');
 			}
 			$this->Feedback_model->delete($id);
 			$this->session->set_flashdata('message', 'xóa thành công');
-			redirect('http://localhost/projectdatabase/index.php/admin/feedback/index');
+			redirect('https://shielded-sierra-44382.herokuapp.com/index.php/admin/feedback/index');
 		}
 	}
  ?>

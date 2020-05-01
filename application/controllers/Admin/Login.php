@@ -8,7 +8,7 @@
 				$this->form_validation->set_rules('login', 'login', 'callback_check_login');
 				if($this->form_validation->run()){
 					$this->session->set_userdata('login', true);
-					redirect('http://localhost/projectdatabase/index.php/admin/admin');
+					redirect('https://shielded-sierra-44382.herokuapp.com/index.php/admin/admin');
 				}
 			}
 			$this->load->view('admin/login/index');

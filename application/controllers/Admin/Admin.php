@@ -81,7 +81,7 @@
 					}else{
 						$this->session->set_flashdata('message', 'Thêm thất bại');
 					}
-					redirect('http://localhost/projectdatabase/index.php/admin/admin/user');
+					redirect('https://shielded-sierra-44382.herokuapp.com/index.php/admin/admin/user');
 				
 				}
 			}
@@ -103,7 +103,7 @@
 
 			if(!$info){
 				$this->session->set_flashdata('message', 'Không tồn tại quản trị viên');
-				redirect('http://localhost/projectdatabase/index.php/admin/admin/user');
+				redirect('https://shielded-sierra-44382.herokuapp.com/index.php/admin/admin/user');
 			}
 
 			if($this->input->post()){
@@ -135,7 +135,7 @@
 					}else{
 						$this->session->set_flashdata('message', 'Cập nhật thất bại');
 					}
-					redirect('http://localhost/projectdatabase/index.php/admin/admin/user');
+					redirect('https://shielded-sierra-44382.herokuapp.com/index.php/admin/admin/user');
 				
 				}
 			}
@@ -151,7 +151,7 @@
 			$info = $this->Admin_model->get_info($id);
 			if(!$info){
 				$this->session->set_flashdata('message', 'Không tồn tại quản trị viên');
-				redirect('http://localhost/projectdatabase/index.php/admin/admin/user');
+				redirect('https://shielded-sierra-44382.herokuapp.com/index.php/admin/admin/user');
 			}else{
 				$data = array();
 				$this->data['info'] = $info;
@@ -160,7 +160,7 @@
 					}else{
 						$this->session->set_flashdata('message', 'Xóa thất bại');
 					}
-					redirect('http://localhost/projectdatabase/index.php/admin/admin/user');
+					redirect('https://shielded-sierra-44382.herokuapp.com/index.php/admin/admin/user');
 			}
 			$this->data['temp'] = 'admin/admin/delete';
 			$this->load->view('admin/main', $this->data);
@@ -170,7 +170,7 @@
 			if($this->session->userdata('login')){
 				$this->session->unset_userdata('login');
 			}
-			redirect('http://localhost/projectdatabase/index.php/admin/login');
+			redirect('https://shielded-sierra-44382.herokuapp.com/index.php/admin/login');
 		}
 	}
  ?>

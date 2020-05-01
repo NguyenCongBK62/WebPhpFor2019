@@ -34,7 +34,7 @@
 					}else{
 						$this->session->set_flashdata('message', 'Thêm thất bại');
 					}
-					redirect('http://localhost/projectdatabase/index.php/admin/brand/index');
+					redirect('https://shielded-sierra-44382.herokuapp.com/index.php/admin/brand/index');
 				
 				}
 			}
@@ -55,7 +55,7 @@
 
 			if(!$info){
 				$this->session->set_flashdata('message', 'Không tồn tại brand');
-				redirect('http://localhost/projectdatabase/index.php/admin/brand/index');
+				redirect('https://shielded-sierra-44382.herokuapp.com/index.php/admin/brand/index');
 			}
 
 			if($this->input->post()){
@@ -72,7 +72,7 @@
 					}else{
 						$this->session->set_flashdata('message', 'Cập nhật thất bại');
 					}
-					redirect('http://localhost/projectdatabase/index.php/admin/brand/index');
+					redirect('https://shielded-sierra-44382.herokuapp.com/index.php/admin/brand/index');
 				
 				}
 			}
@@ -88,11 +88,11 @@
 			$info = $this->Brand_model->get_info($id);
 			if(!$info){
 				$this->session->set_flashdata('message', 'Không tồn tại catalog');
-				redirect('http://localhost/projectdatabase/index.php/admin/brand/index');
+				redirect('https://shielded-sierra-44382.herokuapp.com/index.php/admin/brand/index');
 			}
 			$this->Brand_model->delete($id);
 			$this->session->set_flashdata('message', 'xóa thành công');
-			redirect('http://localhost/projectdatabase/index.php/admin/brand/index');
+			redirect('https://shielded-sierra-44382.herokuapp.com/index.php/admin/brand/index');
 		}
 	}
  ?>

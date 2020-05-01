@@ -35,12 +35,12 @@
 		$info = $this->Order_model->get_info($id);
 		if(!$info){
 			$this->session->set_flashdata('message', 'Không tồn tại đơn hàng');
-			redirect('http://localhost/projectdatabase/index.php/admin/order/index');
+			redirect('https://shielded-sierra-44382.herokuapp.com/index.php/admin/order/index');
 		}
 		$this->Order_model->delete($id);
 		$this->Detail_model->del_rule($input['where']);
 		$this->session->set_flashdata('message', 'đã xử lí đơn hàng');
-		redirect('http://localhost/projectdatabase/index.php/admin/order/index');
+		redirect('https://shielded-sierra-44382.herokuapp.com/index.php/admin/order/index');
 	}
  } 
  ?>
