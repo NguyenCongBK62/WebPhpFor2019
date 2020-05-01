@@ -14,7 +14,7 @@
 			$this->load->library('pagination');
 			$config = array();
 			$config['total_rows'] = $total_rows;
-			$config['base_url'] = "https://shielded-sierra-44382.herokuapp.com/index.php/admin/Product/index";
+			$config['base_url'] = "https://shielded-sierra-44382.herokuapp.com/admin/Product/index";
 			$config['per_page'] = 9;
 			$config['uri_segment'] = 4;
 			//khoi tao cau hinh
@@ -95,7 +95,7 @@
 					}else{
 						$this->session->set_flashdata('message', 'Thêm thất bại');
 					}
-					redirect('https://shielded-sierra-44382.herokuapp.com/index.php/admin/product/index');
+					redirect('https://shielded-sierra-44382.herokuapp.com/admin/product/index');
 				
 				}
 			}
@@ -109,7 +109,7 @@
 			$product = $this->Product_model->get_info($id);
 			if(!$product){
 				$this->session->set_flashdata('message', 'Không tồn tại sản phẩm');
-				redirect('https://shielded-sierra-44382.herokuapp.com/index.php/admin/product/index');
+				redirect('https://shielded-sierra-44382.herokuapp.com/admin/product/index');
 
 			}
 			$this->data['product'] = $product;
@@ -171,7 +171,7 @@
 					}else{
 						$this->session->set_flashdata('message', 'Cập nhật thất bại');
 					}
-					redirect('https://shielded-sierra-44382.herokuapp.com/index.php/admin/product/index');
+					redirect('https://shielded-sierra-44382.herokuapp.com/admin/product/index');
 				
 				}
 			}
@@ -186,7 +186,7 @@
 			$product = $this->Product_model->get_info($id);
 			if(!$product){
 				$this->session->set_flashdata('message', 'Không tồn tại sản phẩm');
-				redirect('https://shielded-sierra-44382.herokuapp.com/index.php/admin/product/index');
+				redirect('https://shielded-sierra-44382.herokuapp.com/admin/product/index');
 
 			}
 			$this->Product_model->delete($id);
@@ -204,7 +204,7 @@
 				}
 			}
 			$this->session->set_flashdata('message', 'Xóa thành công');
-			redirect('https://shielded-sierra-44382.herokuapp.com/index.php/admin/product/index');
+			redirect('https://shielded-sierra-44382.herokuapp.com/admin/product/index');
 		}
 	}
  ?>

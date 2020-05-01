@@ -13,7 +13,7 @@
 			</div>
 		</div><!--/.row-->
 		<div id="toolbar" class="btn-group">
-            <a href="<?php echo "http://localhost/projectdatabase/index.php/admin/Brand/add";?>" class="btn btn-success">
+            <a href="<?php echo "https://shielded-sierra-44382.herokuapp.com/admin/Brand/add";?>" class="btn btn-success">
                 <i class="glyphicon glyphicon-plus"></i> Thêm nhãn hiệu
             </a>
         </div>
@@ -38,8 +38,8 @@
 											<td style=""><?php echo $row->brand_id; ?></td>
 											<td style=""><?php echo $row->brand_name; ?></td>
 											<td class="form-group">
-												<a href="<?php echo "http://localhost/projectdatabase/index.php/admin/Brand/edit/".$row->brand_id;?>" class="btn btn-primary"><i class="glyphicon glyphicon-pencil"></i></a>
-												<a href="<?php echo "http://localhost/projectdatabase/index.php/admin/Brand/delete/".$row->brand_id;?>" class="btn btn-danger"><i class="glyphicon glyphicon-remove"></i></a>
+												<a href="<?php echo "https://shielded-sierra-44382.herokuapp.com/admin/Brand/edit/".$row->brand_id;?>" class="btn btn-primary"><i class="glyphicon glyphicon-pencil"></i></a>
+												<a href="<?php echo "https://shielded-sierra-44382.herokuapp.com/admin/Brand/delete/".$row->brand_id;?>" class="btn btn-danger"><i class="glyphicon glyphicon-remove"></i></a>
 											</td>
 										</tr>
 										<?php endforeach; ?>

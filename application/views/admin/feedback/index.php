@@ -38,7 +38,7 @@
 											<td style=""><?php echo $row->feedback; ?></td>
 											<td style=""><?php echo $row->message; ?></td>
 											<td class="form-group">
-												<a href="<?php echo "http://localhost/projectdatabase/index.php/admin/Feedback/delete/".$row->feedback_id;?>" class="btn btn-danger"><i class="glyphicon glyphicon-remove"></i></a>
+												<a href="<?php echo "https://shielded-sierra-44382.herokuapp.com/admin/Feedback/delete/".$row->feedback_id;?>" class="btn btn-danger"><i class="glyphicon glyphicon-remove"></i></a>
 											</td>
 										</tr>
 										<?php endforeach; ?>
