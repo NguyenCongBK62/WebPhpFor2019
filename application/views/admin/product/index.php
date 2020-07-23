@@ -13,7 +13,7 @@
 			</div>
 		</div><!--/.row-->
 		<div id="toolbar" class="btn-group">
-            <a href="<?php echo "https://shielded-sierra-44382.herokuapp.com/admin/Product/add";?>" class="btn btn-success">
+            <a href="<?php echo "http://localhost/projectdatabase/index.php/admin/Product/add";?>" class="btn btn-success">
                 <i class="glyphicon glyphicon-plus"></i> Thêm sản phẩm
             </a>
         </div>

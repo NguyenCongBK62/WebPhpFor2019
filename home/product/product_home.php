@@ -10,7 +10,7 @@
 					<?php while($row=mysqli_fetch_assoc($query)){?>
 						<!-- Product -->
 						<div class="product">
-							<div class="product_image"><img src="https://shielded-sierra-44382.herokuapp.com/upload/product/<?php echo $row['image_link']; ?>" alt=""></div>
+							<div class="product_image"><img src="http://localhost/projectdatabase/upload/product/<?php echo $row['image_link']; ?>" alt=""></div>
 							<div class="product_extra product_new"><a href="categories.html">New</a></div>
 							<div class="product_content">
 								<div class="product_title"><a href="index.php?page_layout=product&product_id=<?php echo $row['product_id'] ?>"><?php echo $row['name']; ?></a></div>

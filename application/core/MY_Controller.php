@@ -22,10 +22,10 @@
 			$login = $this->session->userdata('login');
 			//neu chua login, ma truy cap trang admin khac
 			if(!$login && $controller != 'login'){
-				redirect('https://shielded-sierra-44382.herokuapp.com/admin/login');
+				redirect('http://localhost/projectdatabase/index.php/admin/login');
 			}
 			if($login && $controller == 'login'){
-				redirect('https://shielded-sierra-44382.herokuapp.com/admin/admin');
+				redirect('http://localhost/projectdatabase/index.php/admin/admin');
 			}
 		}
 	}
